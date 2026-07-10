@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'AutoInsight Nigeria - Used Cars, Specs & Reviews',
+  title: 'Veliq - Used Cars, Specs & Reviews',
   description: 'Find the best Tokunbo (foreign used) cars in Nigeria. Compare prices, specs, and reviews for popular models like Toyota, Honda, and more.',
   keywords: 'used cars Nigeria, Tokunbo cars, car prices, car comparison, auto blog',
 }
