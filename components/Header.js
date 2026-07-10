@@ -13,10 +13,10 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 no-underline">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-display font-bold text-lg">AI</span>
+              <span className="text-white font-display font-bold text-lg">V</span>
             </div>
             <span className="font-display font-bold text-xl text-secondary hidden sm:inline">
-              AutoInsight
+              Veliq
             </span>
           </Link>
 
