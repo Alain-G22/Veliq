@@ -73,3 +73,82 @@ cp .env.local.example .env.local
 ```
 
 4. Update `.env.local` with your Neon connection string:
+### 3. Seed Database
+
+```bash
+npm run db:seed
+```
+
+### 4. Run Locally
+
+```bash
+npm run dev
+```
+
+Visit http://localhost:3000
+
+## Deployment to Vercel
+
+1. Push code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import your GitHub repo
+4. Add `DATABASE_URL` environment variable
+5. Click "Deploy"
+
+## File Structure
+## Customization
+
+### Update Cars
+
+Edit `lib/carData.js` and update `carsData` array. Then run:
+
+```bash
+npm run db:seed
+```
+
+### Add Blog Posts
+
+Edit `lib/carData.js` and add to `blogPostsData` array.
+
+### Change Colors
+
+Edit `tailwind.config.js`:
+
+```javascript
+colors: {
+  primary: '#dc2626',      // Red
+  secondary: '#1f2937',    // Dark gray
+  accent: '#f59e0b',       // Amber
+}
+```
+
+### Add Affiliate Links
+
+In `app/cars/[slug]/page.js`, update the "Enquire Now" button with your link.
+
+## Environment Variables
+## Troubleshooting
+
+**Database error?**
+- Check DATABASE_URL is correct
+- Verify Neon database is active
+
+**Cars not showing?**
+- Run `npm run db:seed`
+- Check database tables exist
+
+**Styles broken?**
+- Delete `.next` folder
+- Run `npm run dev` again
+
+## Support
+
+Email: info@veliq.ng
+
+## License
+
+MIT License
+
+---
+
+**Ready to launch?** Deploy to Vercel now!
