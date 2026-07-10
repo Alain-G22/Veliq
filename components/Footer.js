@@ -9,9 +9,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="font-display font-bold text-sm">AI</span>
+                <span className="font-display font-bold text-sm">V</span>
               </div>
-              <span className="font-display font-bold text-lg">AutoInsight</span>
+              <span className="font-display font-bold text-lg">Veliq</span>
             </div>
             <p className="text-gray-400 text-sm">
               Your trusted source for used car information, prices, and comparisons in Nigeria.
@@ -43,7 +43,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>Email: info@autoinsight.ng</li>
+              <li>Email: info@veliq.ng</li>
               <li>Lagos, Nigeria</li>
               <li className="pt-2">
                 <span className="text-gray-500">Follow us</span>
@@ -55,7 +55,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2024 AutoInsight Nigeria. All rights reserved.</p>
+            <p>&copy; 2024 Veliq Nigeria. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="/" className="hover:text-white transition-colors">Privacy Policy</Link>
               <Link href="/" className="hover:text-white transition-colors">Terms of Service</Link>
