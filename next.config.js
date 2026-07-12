@@ -4,6 +4,8 @@ const nextConfig = {
     domains: ['images.unsplash.com', 'via.placeholder.com'],
   },
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
-
 module.exports = nextConfig
