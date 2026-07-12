@@ -1,12 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import CarCard from '@/components/CarCard'
 import FilterBar from '@/components/FilterBar'
 import { carsData } from '@/lib/carData'
 
-export default function CarsPage() {
+function CarsPageContent() {
   const searchParams = useSearchParams()
   const [filteredCars, setFilteredCars] = useState(carsData)
   const [searchQuery, setSearchQuery] = useState('')
@@ -114,5 +114,13 @@ export default function CarsPage() {
         </div>
       </section>
     </main>
+  )
+}
+
+export default function CarsPage() {
+  return (
+    <Suspense fallback={<div className="text-center py-16">Loading...</div>}>
+      <CarsPageContent />
+    </Suspense>
   )
 }
